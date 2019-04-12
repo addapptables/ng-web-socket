@@ -1,6 +1,6 @@
 {
   "name": "@addapptables/ng-socket-io",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Addapptables",
   "description": "socket-io module for Angular",
