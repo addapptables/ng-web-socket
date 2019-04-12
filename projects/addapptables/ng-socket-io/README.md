@@ -2,8 +2,6 @@
 ADDAPPTABLES ng-socket-io is a library for angular,
 this library is an adapter for @addapptables/ng-web-socket
 
-[Example code](https://stackblitz.com/edit/angular-notifier)
-
 ## Getting Started
 To get started, let's install the package through npm:
 
