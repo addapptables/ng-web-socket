@@ -9,7 +9,7 @@ For socket-io see the following [link](https://github.com/addapptables/ng-web-so
 For signal-r see the following [link](https://github.com/addapptables/ng-web-socket/tree/master/projects/addapptables/ng-signal-r)
 
 ```
-npm i@addapptables/ng-web-socket --S
+npm i @addapptables/ng-web-socket --S
 ```
 
 ## Custom adapters
