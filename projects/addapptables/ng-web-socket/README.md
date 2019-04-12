@@ -144,6 +144,7 @@ Create a custom adapter:
 import * as io from 'socket.io-client';
 import { ISocket } from '@addapptables/ng-web-socket';
 
+@Injectable()
 // implements ISocket
 export class SocketIoAdapter implements ISocket<SocketIOClient.Socket, SocketIOClient.ConnectOpts> {
 
