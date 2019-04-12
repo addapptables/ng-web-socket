@@ -1,6 +1,6 @@
 {
   "name": "@addapptables/ng-web-socket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Addapptables",
   "description": "Web socket module for Angular",

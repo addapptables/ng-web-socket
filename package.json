@@ -1,6 +1,6 @@
 {
   "name": "ng-web-socket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Addapptables",
   "description": "Web socket module for Angular",
   "homepage": "https://github.com/addapptables/ng-web-socket",
