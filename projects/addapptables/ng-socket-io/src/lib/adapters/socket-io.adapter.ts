@@ -1,6 +1,8 @@
 import * as io from 'socket.io-client';
 import { ISocket } from '@addapptables/ng-web-socket';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class SocketIoAdapter implements ISocket<SocketIOClient.Socket, SocketIOClient.ConnectOpts> {
 
     connect(url: string, options?: SocketIOClient.ConnectOpts): Promise<SocketIOClient.Socket> {
