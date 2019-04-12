@@ -5,7 +5,7 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -17,6 +17,26 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@addapptables/ng-web-socket": [
+        "dist/addapptables/ng-web-socket"
+      ],
+      "@addapptables/ng-web-socket/*": [
+        "dist/addapptables/ng-web-socket/*"
+      ],
+      "@addapptables/ng-socket-io": [
+        "dist/addapptables/ng-socket-io"
+      ],
+      "@addapptables/ng-socket-io/*": [
+        "dist/addapptables/ng-socket-io/*"
+      ],
+      "@addapptables/ng-signal-r": [
+        "dist/addapptables/ng-signal-r"
+      ],
+      "@addapptables/ng-signal-r/*": [
+        "dist/addapptables/ng-signal-r/*"
+      ]
+    }
   }
 }

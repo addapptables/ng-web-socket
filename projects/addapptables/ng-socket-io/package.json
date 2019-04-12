@@ -1,0 +1,31 @@
+{
+  "name": "@addapptables/ng-socket-io",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Addapptables",
+  "description": "socket-io module for Angular",
+  "homepage": "https://github.com/addapptables/ng-web-socket",
+  "peerDependencies": {
+    "@addapptables/ng-web-socket": ">=1.0.0 < 2.0.0",
+    "@angular/common": ">=7.0.0 < 8.0.0",
+    "@angular/core": ">=7.0.0 < 8.0.0",
+    "socket.io-client": ">=2.0.0 <3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addapptables/ng-web-socket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/addapptables/ng-web-socket/issues"
+  },
+  "keywords": [
+    "angular",
+    "socket-io",
+    "web-socket",
+    "web socket",
+    "addapptables",
+    "ng-web-socket",
+    "signalr",
+    "signal-r"
+  ]
+}
