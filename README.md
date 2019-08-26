@@ -8,6 +8,13 @@ For socket-io see the following [link](https://github.com/addapptables/ng-web-so
 
 For signal-r see the following [link](https://github.com/addapptables/ng-web-socket/tree/master/projects/addapptables/ng-signal-r)
 
+Choose the version corresponding to your Angular version:
+
+ Angular     | @addapptables/ng-web-socket
+ ----------- | -------------------
+ 8           | 2.x
+ 7           | 1.x
+
 ```
 npm i @addapptables/ng-web-socket --S
 ```

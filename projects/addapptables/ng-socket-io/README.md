@@ -5,6 +5,13 @@ this library is an adapter for @addapptables/ng-web-socket
 ## Getting Started
 To get started, let's install the package through npm:
 
+Choose the version corresponding to your Angular version:
+
+ Angular     | @addapptables/ng-socket-io
+ ----------- | -------------------
+ 8           | 2.x
+ 7           | 1.x
+
 ```
 npm i @addapptables/ng-socket-io  @addapptables/ng-web-socket socket.io-client --S
 ```

@@ -1,13 +1,13 @@
 {
   "name": "@addapptables/ng-web-socket",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "author": "Addapptables",
   "description": "Web socket module for Angular",
   "homepage": "https://github.com/addapptables/ng-web-socket",
   "peerDependencies": {
-    "@angular/common": ">=7.0.0 < 8.0.0",
-    "@angular/core": ">=7.0.0 < 8.0.0"
+    "@angular/common": ">=8.0.0 < 9.0.0",
+    "@angular/core": ">=8.0.0 < 9.0.0"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
     "url": "https://github.com/addapptables/ng-web-socket/issues"
   },
   "keywords": [
+    "angular socket io",
     "angular",
     "socket-io",
     "web-socket",
