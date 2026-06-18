@@ -6,7 +6,8 @@
   "homepage": "https://github.com/addapptables/ng-web-socket",
   "scripts": {
     "ng": "ng",
-    "build": "ng build @addapptables/ng-web-socket && ng build @addapptables/ng-socket-io && ng build @addapptables/ng-signal-r",
+    "build": "ng build @addapptables/ng-web-socket --configuration production && ng build @addapptables/ng-socket-io --configuration production && ng build @addapptables/ng-signal-r --configuration production",
+    "build:dev": "ng build @addapptables/ng-web-socket && ng build @addapptables/ng-socket-io && ng build @addapptables/ng-signal-r",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "ng lint"
