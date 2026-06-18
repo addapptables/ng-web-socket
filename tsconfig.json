@@ -3,40 +3,40 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "bundler",
     "importHelpers": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
     "lib": [
-      "es2018",
+      "ES2022",
       "dom"
     ],
     "paths": {
-      "@addapptables/ng-web-socket": [
-        "dist/addapptables/ng-web-socket"
-      ],
-      "@addapptables/ng-web-socket/*": [
-        "dist/addapptables/ng-web-socket/*"
-      ],
-      "@addapptables/ng-socket-io": [
-        "dist/addapptables/ng-socket-io"
-      ],
-      "@addapptables/ng-socket-io/*": [
-        "dist/addapptables/ng-socket-io/*"
-      ],
-      "@addapptables/ng-signal-r": [
-        "dist/addapptables/ng-signal-r"
-      ],
-      "@addapptables/ng-signal-r/*": [
-        "dist/addapptables/ng-signal-r/*"
-      ]
+      "@addapptables/ng-web-socket": ["dist/addapptables/ng-web-socket"],
+      "@addapptables/ng-web-socket/*": ["dist/addapptables/ng-web-socket/*"],
+      "@addapptables/ng-socket-io": ["dist/addapptables/ng-socket-io"],
+      "@addapptables/ng-socket-io/*": ["dist/addapptables/ng-socket-io/*"],
+      "@addapptables/ng-signal-r": ["dist/addapptables/ng-signal-r"],
+      "@addapptables/ng-signal-r/*": ["dist/addapptables/ng-signal-r/*"]
     }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }

@@ -1,13 +1,17 @@
 {
   "name": "@addapptables/ng-web-socket",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "license": "MIT",
   "author": "Addapptables",
   "description": "Web socket module for Angular",
   "homepage": "https://github.com/addapptables/ng-web-socket",
   "peerDependencies": {
-    "@angular/common": ">=8.0.0 < 9.0.0",
-    "@angular/core": ">=8.0.0 < 9.0.0"
+    "@angular/common": "^19.0.0",
+    "@angular/core": "^19.0.0"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "tslib": "^2.6.0"
   },
   "repository": {
     "type": "git",

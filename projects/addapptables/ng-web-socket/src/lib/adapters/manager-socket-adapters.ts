@@ -9,7 +9,7 @@ import { withOptions } from '../life-cycle/socket-with-options';
 @Injectable()
 export class ManagerSocketAdapter implements OnDestroy {
 
-    private sockets: any[];
+    private sockets: any[] = [];
 
     private connections: any[] = [];
 
@@ -30,6 +30,9 @@ export class ManagerSocketAdapter implements OnDestroy {
         const methods = getMetadata(serviceSocket);
         if (typeof serviceSocket[withOptions] === 'function') {
             metadata = Object.assign(metadata, serviceSocket[withOptions]());
+        }
+        if (!metadata.url) {
+            throw new Error('WebSocketGateway is missing a "url". Provide it via @WebSocketGateway({ url }) or withOptions().');
         }
         const connection = await this.adapter.connect(metadata.url, metadata.options);
         this.bindConnection(methods, connection, serviceSocket);

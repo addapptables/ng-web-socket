@@ -1,4 +1,4 @@
 export class WebSocketEventModel {
-    name: string;
-    function: string;
+    name!: string;
+    function!: string;
 }

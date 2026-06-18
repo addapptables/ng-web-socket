@@ -1,33 +1,34 @@
-import * as io from 'socket.io-client';
+import { io, Socket, ManagerOptions, SocketOptions } from 'socket.io-client';
 import { ISocket } from '@addapptables/ng-web-socket';
 import { Injectable } from '@angular/core';
 
-@Injectable()
-export class SocketIoAdapter implements ISocket<SocketIOClient.Socket, SocketIOClient.ConnectOpts> {
+export type SocketIoOptions = Partial<ManagerOptions & SocketOptions>;
 
-    connect(url: string, options?: SocketIOClient.ConnectOpts): Promise<SocketIOClient.Socket> {
-        return new Promise((resolve, reject) => {
+@Injectable()
+export class SocketIoAdapter implements ISocket<Socket, SocketIoOptions> {
+
+    connect(url: string, options?: SocketIoOptions): Promise<Socket> {
+        return new Promise<Socket>((resolve, reject) => {
             try {
-                const ioFunc = (io as any).default ? (io as any).default : io;
-                const connection = ioFunc(url, options);
-                resolve(connection.connect());
+                const connection = io(url, options);
+                resolve(connection);
             } catch (error) {
-                reject(error.message);
+                reject(error instanceof Error ? error.message : error);
             }
         });
     }
 
-    bindEvent(connection: SocketIOClient.Socket, event: string, callFunction: (...args: any[]) => void) {
+    bindEvent(connection: Socket, event: string, callFunction: (...args: any[]) => void): void {
         connection.on(event, callFunction);
     }
 
-    disconnect(connection: SocketIOClient.Socket): Promise<void> {
-        return new Promise((resolve, reject) => {
+    disconnect(connection: Socket): Promise<void> {
+        return new Promise<void>((resolve, reject) => {
             try {
                 connection.disconnect();
                 resolve();
             } catch (error) {
-                reject(error.message);
+                reject(error instanceof Error ? error.message : error);
             }
         });
     }

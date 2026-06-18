@@ -7,32 +7,25 @@
       "root": "projects/addapptables/ng-web-socket",
       "sourceRoot": "projects/addapptables/ng-web-socket/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "addapptable",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/addapptables/ng-web-socket/tsconfig.lib.json",
             "project": "projects/addapptables/ng-web-socket/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/addapptables/ng-web-socket/src/test.ts",
-            "tsConfig": "projects/addapptables/ng-web-socket/tsconfig.spec.json",
-            "karmaConfig": "projects/addapptables/ng-web-socket/karma.conf.js"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/addapptables/ng-web-socket/tsconfig.lib.prod.json"
+            }
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/addapptables/ng-web-socket/tsconfig.lib.json",
-              "projects/addapptables/ng-web-socket/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/addapptables/ng-web-socket/**/*.ts"
             ]
           }
         }
@@ -42,32 +35,25 @@
       "root": "projects/addapptables/ng-socket-io",
       "sourceRoot": "projects/addapptables/ng-socket-io/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "addapptable",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/addapptables/ng-socket-io/tsconfig.lib.json",
             "project": "projects/addapptables/ng-socket-io/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/addapptables/ng-socket-io/src/test.ts",
-            "tsConfig": "projects/addapptables/ng-socket-io/tsconfig.spec.json",
-            "karmaConfig": "projects/addapptables/ng-socket-io/karma.conf.js"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/addapptables/ng-socket-io/tsconfig.lib.prod.json"
+            }
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/addapptables/ng-socket-io/tsconfig.lib.json",
-              "projects/addapptables/ng-socket-io/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/addapptables/ng-socket-io/**/*.ts"
             ]
           }
         }
@@ -77,37 +63,29 @@
       "root": "projects/addapptables/ng-signal-r",
       "sourceRoot": "projects/addapptables/ng-signal-r/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "addapptable",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/addapptables/ng-signal-r/tsconfig.lib.json",
             "project": "projects/addapptables/ng-signal-r/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/addapptables/ng-signal-r/src/test.ts",
-            "tsConfig": "projects/addapptables/ng-signal-r/tsconfig.spec.json",
-            "karmaConfig": "projects/addapptables/ng-signal-r/karma.conf.js"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/addapptables/ng-signal-r/tsconfig.lib.prod.json"
+            }
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/addapptables/ng-signal-r/tsconfig.lib.json",
-              "projects/addapptables/ng-signal-r/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/addapptables/ng-signal-r/**/*.ts"
             ]
           }
         }
       }
     }
-  },
-  "defaultProject": "@addapptables/ng-web-socket"
+  }
 }

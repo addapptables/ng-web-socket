@@ -1,4 +1,8 @@
 export { NgWebSocketModule } from './lib/ng-web-socket.module';
+export {
+  provideWebSocket,
+  provideWebSocketFeature,
+} from './lib/providers/web-socket.providers';
 export { ManagerSocketAdapter } from './lib/adapters/manager-socket-adapters';
 export { Subscribe, WebSocketGateway, WebSocketServer } from './lib/decorators/socket.decorator';
 export { ISocket } from './lib/interfaces/socket.interface';
